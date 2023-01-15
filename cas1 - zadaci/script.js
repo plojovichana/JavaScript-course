@@ -45,7 +45,8 @@
 
 //zadatak 5
 
-var niz = ["Alex", "Jacob", "Anes","amil"];
+// var niz = ["Alex", "Jacob", "Anes","amil"];
+
 //*1
 // if (niz.length === 0){
 //     console.log("no one likes this");
@@ -62,17 +63,17 @@ var niz = ["Alex", "Jacob", "Anes","amil"];
 // }
 
 //*2
-switch(niz.length) {
-    case 0:
-        console.log("no one likes this");
-      break;
-    case 1:
-        console.log(niz[0],"like this");
-      break;
-    case 2:
-        console.log(niz[0],niz[1],"like this");
-    default:
-        console.log(niz[0],niz[1],"and",(niz.length - 2),"others like this")
-  }
+// switch(niz.length) {
+//     case 0:
+//         console.log("no one likes this");
+//       break;
+//     case 1:
+//         console.log(niz[0],"like this");
+//       break;
+//     case 2:
+//         console.log(niz[0],niz[1],"like this");
+//     default:
+//         console.log(niz[0],niz[1],"and",(niz.length - 2),"others like this")
+//   }
 //zadatak 6
 
