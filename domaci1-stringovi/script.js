@@ -1,3 +1,9 @@
+// Domaći
+//naći najdužu rec u string-u. Npr ako je string 'Ja volim programiranje' 
+// Rezultat treba da bude 'programiranje'
+
+//
+
 str = "Ja volim programiranje";
     var reci = str.split(' ');
     var maxLength = 0;
