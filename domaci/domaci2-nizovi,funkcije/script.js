@@ -4,7 +4,7 @@
 
 //
 
-const niz = [1, 2, 3, 1, 1, 4];
+const niz = prompt("Unesite niz : ");
 function provera(arr) {
   let LevaStr = 0;
   let DesnaStr = 0;
