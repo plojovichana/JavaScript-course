@@ -53,15 +53,15 @@
 
 //3.
 
-// n = 5;
-// proizvod = 1;
+n = 5;
+let proizvod = 1;
 
-// function faktorijal (br){
-//     while(n>0){
-//     proizvod = proizvod*n;
-//     n--;
-// }
-// return proizvod;
-// }
+function faktorijal (br){
+    while(br>0){
+    proizvod *= br;
+    br--;
+}
+return proizvod;
+}
 
-// console.log(faktorijal(n));
+console.log(faktorijal(n));
