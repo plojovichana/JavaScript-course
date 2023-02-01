@@ -88,12 +88,12 @@
 //6.
 
 
-function animal (obj){
-    return "This"+" "+ obj.color+" " + obj.name+" "+"has"+" "+obj.legs+" "+"legs";
-}
-const zivotinja = {
-    name : "dog",
-    color : "white",
-    legs : 4,
-}
-console.log(animal(zivotinja))
+// function animal (obj){
+//     return "This"+" "+ obj.color+" " + obj.name+" "+"has"+" "+obj.legs+" "+"legs";
+// }
+// const zivotinja = {
+//     name : "dog",
+//     color : "white",
+//     legs : 4,
+// }
+// console.log(animal(zivotinja))
