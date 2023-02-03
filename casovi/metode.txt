@@ -1,0 +1,30 @@
+//pop() - uklanja poslednji element iz niza
+//push() - dodaje novi elemnt na kraju niza
+//toLowerCase() - da sve prebaci u mala slova
+//toUpperCase() - da sve prebaci u velika slova
+//concat() - omogucava nam da sastavima dva niza/string
+//trim() - da uklonimo space sa pocetka i kraja string
+//slice(start,end) - da uzmemo deo nekog niza, -start uzima i prikazuje, end ne prikazuje
+//substring - izdvaja karaktere i vraca kao novi string
+//unshift() - dodaje novi element na pocetku niza
+//shift() - uklanja element sa pocetka niza
+//includes() - proveravamo dal se neki element nalazi u nizu/stringu
+//split() - string prebacuje u niz
+//join() - niz da prebaci u string
+//replace(  ,  ) - da zamani neki element (prvi na koji naidje)
+//map() - vraca nam ceo niz, ali izmenjen
+//sort() - da sortira
+//reverse() - vraca niz obrnutog redosleda elemenata
+//charAt() - da prikaze karakter na nekoj poziciji
+//filter() - vraca samo elemente niza koji prodju test
+//indexOf('') - vraca nam index trazenog elementa
+//substr - od koje pozicije, koliko zelim karaktera
+//splice(1,2) - od indexa 1 iseci dva elementa , uklonice iz niza te elemente . Moze da se dodaju argumenti
+//koji ce se dodat na poziciju koje su izbrisane
+//match metoda proverava da li se niz podudara
+//toString - da prebacimo u string
+//every vraca true ako su svi elementi niza ispunili neku vrednost-tj.test koji smo postavili
+//filter - vraca samo elemente koji su ispunili vrednost;
+//some - proverava da li su svi elementi prosli test
+//valueOf - vraca vrednost niza
+//fill -ispunjava odredjene elemente u nizu
