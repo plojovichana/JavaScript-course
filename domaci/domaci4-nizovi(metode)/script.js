@@ -1,3 +1,5 @@
+//1.
+
 // const geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
 // const words = ["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"];
 // function filter_Geese(str, geese) {
@@ -19,20 +21,20 @@ const students = [
     { name: "Charlie", scores: [90, 95, 85] },
     { name: "David", scores: [100, 100, 50] }
   ];
+
   
- 
-function getTopStudents(students) {
-    return students
-      .map(student => {
-        student.average =
-          student.scores.reduce((sum, score) => sum + score) /
-          student.scores.length;
-        return student;
-      })
-      .filter(student => student.average > 90);
-  }
-   
-const topStudents = getTopStudents(students);
-console.log(topStudents);
+  const averageScore = scores => scores.reduce((a, b) => a + b) / scores.length;
   
+  students.forEach(student => {
+    const avg = averageScore(student.scores);
+  });
   
+  const highPerformingStudents = students.filter(student => averageScore(student.scores) > 90);
+  
+  const result = highPerformingStudents.map(student => ({
+    name: student.name,
+    average: averageScore(student.scores)
+  }));
+  
+  console.log(result);
+
