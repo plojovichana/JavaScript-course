@@ -53,6 +53,11 @@
 // console.log(person);
 
 
+
+//zadaci - vezbanje
+
+
+
 //1.
 
 
@@ -102,13 +107,13 @@
 // myCar.koci();
 
 
-//
+//2.
 
 
 // const person = {
 //     firstName : "Hana",
 //     LastName : "Plojovic",
-//     language: "Srpski",
+//     language: "srpski",
 //     setLanguage : function(newlanguage){
 //         this.language = newlanguage;
 //     },
@@ -119,4 +124,3 @@
 // person.setLanguage("engleski")
 // person.setNickName()
 // console.log(person)
-
