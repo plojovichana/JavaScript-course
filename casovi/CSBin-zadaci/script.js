@@ -99,4 +99,83 @@ function pipe(arrOfFuncs, value) {
   console.log(pipe(capAddlowRepeat, 'cat')); // should log: 'CATcatCATcat'
 
 
+  // Challenge 21
+function highestFunc(objOfFuncs, subject) {
+  let largest = Number.NEGATIVE_INFINITY;
+    let rightKey = undefined;
+    for (let [key, fn] of Object.entries(objOfFuncs)) {
+      if (fn(subject) > largest) {
+        largest = fn(subject);
+        rightKey = key;
+      }
+    }
+    return rightKey;
+  }
+  
+  
+  // /*** Uncomment these to check your work! ***/
+  const groupOfFuncs = {};
+  groupOfFuncs.double = n => n * 2;
+  groupOfFuncs.addTen = n => n + 10;
+  groupOfFuncs.inverse = n => n * -1;
+  console.log(highestFunc(groupOfFuncs, 5)); // should log: 'addTen'
+  console.log(highestFunc(groupOfFuncs, 11)); // should log: 'double'
+  console.log(highestFunc(groupOfFuncs, -20)); // should log: 'inverse'
+  
+  
+  // Challenge 22
+function combineOperations(startVal, arrOfFuncs) {
+  let result = startVal;
+  for (let i = 0; i < arrOfFuncs.length; i++) {
+    result = arrOfFuncs[i](result);
+  }
+  return result;
+}
+function add100(num) {
+  return num + 100;
+}
+
+function divByFive(num) {
+  return num / 5;
+}
+
+function multiplyByThree(num) {
+  return num * 3;
+}
+function multiplyFive(num){
+  return num *5;
+}
+function addTen(num){
+  return num + 10;
+}
+
+// /*** Uncomment these to check your work! ***/
+console.log(combineOperations(0, [add100, divByFive, multiplyByThree])); // Should output 60 -->
+console.log(combineOperations(0, [divByFive, multiplyFive, addTen])); // Should output 10
+
+
+// Challenge 23
+function myFunc(array, callback) {
+  for (let i = 0; i < array.length; i++) {
+          if (callback(array[i])) {
+              return i;
+          }
+      }
+      return -1;
+  }
+  
+  const numbers = [2, 3, 6, 64, 10, 8, 12];
+  const evens = [2, 4, 6, 8, 10, 12, 64];
+  
+  function isOdd(num) {
+    return (num % 2 !== 0);
+  }
+  
+  // /*** Uncomment these to check your work! ***/
+  console.log(myFunc(numbers, isOdd)); // Output should be 1
+  console.log(myFunc(evens, isOdd)); // Output should be -1
+  
+
+  
+  // Challenge 24
   
