@@ -58,3 +58,45 @@ console.log(multiMap(['catfood', 'glue', 'beer'], [function(str) { return str.to
 //{ catfood: ['CATFOOD', 'Catfood', 'catfoodcatfood'], 
 //glue: ['GLUE', 'Glue', 'glueglue'], 
 //beer: ['BEER', 'Beer', 'beerbeer'] }
+
+
+
+// Challenge 19
+function rating(arrOfFuncs, value) {
+	let count = 0;
+    for (let i = 0; i < arrOfFuncs.length; i++) {
+        if (arrOfFuncs[i](value)) {
+            count++;
+        }
+    }
+    return count / arrOfFuncs.length * 100;
+}
+
+// /*** Uncomment these to check your work! ***/
+const isEven = n => n % 2 === 0;
+const greaterThanFour = n => n > 4;
+const isSquare = n => Math.sqrt(n) % 1 === 0;
+const hasSix = n => n.toString().includes('6');
+const checks = [isEven, greaterThanFour, isSquare, hasSix];
+console.log(rating(checks, 64)); // should log: 100
+console.log(rating(checks, 66)); // should log: 
+
+
+// Challenge 20
+function pipe(arrOfFuncs, value) {
+  let result = value;
+      for (let i = 0; i < arrOfFuncs.length; i++) {
+          result = arrOfFuncs[i](result);
+      }
+      return result;
+  }
+  
+  // /*** Uncomment these to check your work! ***/
+  const capitalize = str => str.toUpperCase();
+  const addLowerCase = str => str + str.toLowerCase();
+  const repeat = str => str + str;
+  const capAddlowRepeat = [capitalize, addLowerCase, repeat];
+  console.log(pipe(capAddlowRepeat, 'cat')); // should log: 'CATcatCATcat'
+
+
+  
