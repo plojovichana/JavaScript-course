@@ -1,17 +1,17 @@
 //8.
 
-// function union(arrays) {
-//     return arrays.reduce(function(result, currentArray) { // primjenjuje reduce() na arrays, result je trenutni rezultat unije, currentArray je trenutni niz u arrays koji se uspoređuje s result
-//       currentArray.forEach(function(item) { // prolazi kroz svaki element u trenutnom nizu
-//         if (result.indexOf(item) === -1) { // provjerava da li se element već nalazi u rezultatu; ako se ne nalazi, dodaje se u niz
-//           result.push(item); // dodaje element u niz
-//         }
-//       });
-//       return result; // vraća novi rezultat unije nizova
-//     }, []); // početni rezultat je prazan niz
-//   }
-//   console.log(union([[5, 10, 15], [15, 88, 1, 5, 7], [100, 15, 10, 1, 5]]));
-// should log: [5, 10, 15, 88, 1, 7, 100]
+function union(arrays) {
+    return arrays.reduce(function(result, currentArray) { // primjenjuje reduce() na arrays, result je trenutni rezultat unije, currentArray je trenutni niz u arrays koji se uspoređuje s result
+      currentArray.forEach(function(item) { // prolazi kroz svaki element u trenutnom nizu
+        if (result.indexOf(item) === -1) { // provjerava da li se element već nalazi u rezultatu; ako se ne nalazi, dodaje se u niz
+          result.push(item); // dodaje element u niz
+        }
+      });
+      return result; // vraća novi rezultat unije nizova
+    }, []); // početni rezultat je prazan niz
+  }
+  console.log(union([[5, 10, 15], [15, 88, 1, 5, 7], [100, 15, 10, 1, 5]]));
+//should log: [5, 10, 15, 88, 1, 7, 100]
 
 
 //9.
