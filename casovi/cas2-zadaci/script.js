@@ -6,8 +6,6 @@
 // const brojeviVeciOd10 = kvadriraniBrojevi.filter((x) => x > 10);
 // console.log(brojeviVeciOd10)
 
-// 2.
-
 // const niz= [10,15,45,10,65,78,98,45,15];
 // const uniqueArr = [];
 // for(let i = 0;i<niz.length;i++){
