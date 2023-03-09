@@ -126,3 +126,5 @@
 //         console.log(niz[0],niz[1],"and",(niz.length - 2),"others like this")
 //   }
 
+
+console.log("Hamza najjjaci")
