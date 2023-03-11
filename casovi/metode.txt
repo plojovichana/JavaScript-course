@@ -21,7 +21,7 @@
 //substr - od koje pozicije, koliko zelim karaktera
 //splice(1,2) - od indexa 1 iseci dva elementa , uklonice iz niza te elemente . Moze da se dodaju argumenti
 //koji ce se dodat na poziciju koje su izbrisane
-//match metoda proverava da li se niz podudara
+//match - metoda proverava da li se niz podudara
 //toString - da prebacimo u string
 //every vraca true ako su svi elementi niza ispunili neku vrednost-tj.test koji smo postavili
 //filter - vraca samo elemente koji su ispunili vrednost;
