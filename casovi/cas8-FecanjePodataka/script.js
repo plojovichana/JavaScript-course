@@ -33,11 +33,11 @@
 
 // //1)get-uzima-44.linija
 
-// //2)post-dadaje-51.linija
+// //2)post-dadaje-57.linija
 
-// //3)put-menja-69.linija
+// //3)put-menja-79.linija
 
-// //4)delete-brise-91.linija
+// //4)delete-brise-101.linija
 
 
 
@@ -47,6 +47,12 @@
 //     method: 'GET'})
 //     .then(response => response.json())
 //     .then(data => console.log(data));
+
+
+
+
+
+
 
 // //2)post
 
@@ -64,6 +70,10 @@
 // })
 //     .then(response => response.json())
 //     .then(data => console.log(data));
+
+
+
+
 
 
 // //3)put
