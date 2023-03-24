@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
   body {
     font-family: 'Raleway',sans-serif;
     background-color: #1a1a1a;
@@ -21,18 +28,24 @@ section {
 }
 
 .game--title {
+    margin-top: 50px;
     font-size: 80px;
     color: #6a2fd7;
-    margin: 10px auto;
 }
 
 .game--container {
     display: grid;
     grid-template-columns: repeat(3, auto);
     width: 306px;
-    margin: 10px auto;
+    margin: 15px auto;
     background-color: #11213a;
-    color: #6504c0;
+    color: #ffffff;
+    border: 2px solid #6504c0;
+    box-shadow: 2px 2px 2px 2px #6504c0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .cell {
@@ -49,7 +62,7 @@ section {
 .game--status {
     font-size: 50px;
     color: #612fd7;
-    margin: 20px auto;
+    margin-top: 30px;
 }
 
 .game--restart {
@@ -60,6 +73,17 @@ section {
     color: #c9dbfd;
     box-shadow: 2px 2px 2px 2px #6823d8;
     border: 2px solid #4a23d8;
+    cursor: pointer;
+    margin: 20px auto;
+    border-radius: 7px;
+}
+
+.game--restart:hover {
+    background-color: #6823d8;
+    color: #c9dbfd;
+    box-shadow: 2px 2px 2px 2px #b7acf7;
+    border: 2px solid #b7acf7;
+    transition: 0.4s;
 }
 </style>
 <body>
