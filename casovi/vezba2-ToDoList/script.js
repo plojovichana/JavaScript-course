@@ -5,8 +5,8 @@
 // console.log(card);
 // card.style.width = '300px';
 // card.style.height = '300px';
-// card.style.backgroundColor = 'red';
 // button.addEventListener('click', ()=>{
+// card.style.backgroundColor = 'red';
 //     let tekst = document.createElement('p');
 //     tekst.innerText = inp.value;
 //     let check = document.createElement('input');
