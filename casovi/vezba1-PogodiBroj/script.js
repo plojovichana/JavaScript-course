@@ -8,7 +8,7 @@ button.addEventListener('click', function() {
     let pogodi = Number(input.value);
     brojac++;
     if (pogodi === random) {
-        p.textContent = 'Pogodili ste broj iz ' + brojac +" pokusaja";
+        p.textContent = 'Pogodili ste broj iz ' + brojac +". pokusaja";
         button.disabled = true;
     } else if (pogodi < random) {
         p.textContent = 'Broj treba da bude veci!';
