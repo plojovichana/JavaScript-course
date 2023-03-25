@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>kviz</title>
+  </head>
+  <style>
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(199, 237, 250);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: rgb(128, 177, 207);
+}
+
+#choices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+  background-color: rgba(183, 227, 241, 0.774) ;
+    padding: 1rem;
+    width: 450px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.choice {
+  margin: 0.5rem;
+  padding: 1rem;
+  border: 2px solid black;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+.choice:hover {
+  background-color: rgb(182, 219, 231);
+  transition: 0.3s;
+  border: 2px solid white;
+  color: white;
+
+}
+
+#submit {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(165, 203, 216);
+  border: 2px solid white;
+}
+
+#submit:hover {
+  background-color: rgb(185, 216, 235);
+  transition: 0.3s;
+  border: 2px solid black;
+    color: black;
+}
+
+#result {
+  font-size: 1.5rem;
+}
+
+#question {
+    font-size: 1.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-bottom: 1px solid white;
+    font-style: bold;
+    color: rgb(128, 177, 207);
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#result{
+    font-size: 2.1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-bottom: 1px solid white;
+    font-style: bold;
+    color: rgb(128, 177, 207);
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+  </style>
+  <body>
+    <div class="container">
+      <h1>Kviz</h1>
+      <p id="question"></p>
+      <div id="choices"></div>
+      <button id="submit">Submit</button>
+      <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
