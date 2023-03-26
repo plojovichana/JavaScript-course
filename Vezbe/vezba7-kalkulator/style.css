@@ -36,6 +36,9 @@ body {
     padding-bottom: 10px;
     padding-right: 13px;
     padding-top: 10px;
+    background-color: #f8fad4;
+    color: rgb(117, 103, 103);
+    width: 360px;
 }
 
 .numbers {
