@@ -15,7 +15,6 @@ function onNumberClickHandler(number) {
   document.getElementById("result").textContent = currentValue;
   showCurrentValues();
 }
-
 function onOperationSelectHandler(selectedOp) {
   switch (op) {
     case "":
