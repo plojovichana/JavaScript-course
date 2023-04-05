@@ -42,9 +42,21 @@ btn.addEventListener("click", () => {
     mintemp.innerText = "Minimalna temperatura: "+ res.main.temp_min + "C";
     container.appendChild(mintemp)
 
-    let opis = document.createElement("p");
+    let opis = document.createElement("h4");
     opis.innerText = res.weather[0].description;
     container.appendChild(opis);
+
+    let vlaznost = document.createElement("p");
+    vlaznost.innerText = "Vlaznost: " + res.main.humidity;
+    container.appendChild(vlaznost);
+
+    let pritisak = document.createElement("p");
+    pritisak.innerText = "Pritisak: " + res.main.pressure;
+    container.appendChild(pritisak);
+
+    let oblaci = document.createElement("p");
+    oblaci.innerText = "Oblaci: " + res.clouds.all;
+    container.appendChild(oblaci);
 
     let crta = document.createElement("p");
     crta.innerText = "______________________________________________" ;
@@ -59,5 +71,4 @@ btn.addEventListener("click", () => {
 
 });
 
-//code for errors and if input = ""
 
