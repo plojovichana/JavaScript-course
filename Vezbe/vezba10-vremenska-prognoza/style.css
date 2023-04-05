@@ -12,7 +12,7 @@ body{
     background-color: #8785A2;
     border: 1px solid #8785A2;
     border-radius: 5px;
-    padding: 25px;
+    padding: 32px;
     margin: 10px 0px;
     align-items: center;
     justify-content: center;
@@ -82,5 +82,5 @@ input[type=text]:hover{
 
 .div h4{
     font-size: 25px;
-    margin: 7px;
+    margin: 7px ;
 }

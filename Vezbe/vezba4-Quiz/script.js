@@ -67,8 +67,8 @@ const questions = [
     if (currentQuestion === questions.length) {
       questionText.innerText = "Kviz je zavrsen!";
       resultText.style.padding = "20px";
-      questionText.style.color = "lightblue";
-      questionText.style.backgroundColor = "GhostWhite";
+      questionText.style.color = "#E8A0BF";
+      questionText.style.backgroundColor = "#fdf4f5be";
       questionText.style.fontSize = "38px";
       resultText.innerText = "Vas skor je " + score +" od mogucih " + questions.length;
       submitButton.style.display = "none";
