@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prijavi Problem</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn.iconscout.com/icon/free/png-256/report-problem-1781583-1513935.png"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar"></div>
+    <div class="about-div">
+        <div class="divZaTekst">
+            <h1 class="title">Prijavi Problem</h1>
+        <p>"Prijavi problem" je stranica na kojoj možete prijaviti probleme koji se tiču gradskih usluga, infrastrukture, javnog prijevoza, održavanja javnih prostora, zagađenja zraka i vode, problema s odlaganjem otpada i drugih problema koji utječu na kvalitetu života u gradu.</p>
+        <br>
+        <p>Koristite obrazac za prijavu na ovoj stranici, a Vaša prijava će biti proslijeđena nadležnim gradskim vlastima ili službama kako bi se problem istražio i riješio što je brže moguće.</p>
+        <br>
+        
+        
+        <button id="scroll-button">Prijavi Problem</button>
+
+    </div>
+
+
+        <div class="divZaSliku">
+            <div class="image1"><h1>Slika</h1></div>
+        </div>
+        
+
+    </div>
+
+    <div id="second-part">
+        <div class="forma">
+            <form>
+            <label for="name">Naziv Problema:</label>
+            <input type="text" id="name" name="name"><br>
+          
+            <label for="description">Opis Problema:</label>
+            <textarea id="description" name="description"></textarea><br>
+          
+          </form>
+          
+        </div>
+        <div class="divZaSliku">
+            <div class="image1"><h1>Slika</h1></div>
+            <h3>Hvala Vam što pomažete u izgradnji boljeg grada!</h3>
+        </div>
+        
+        
+      </div>
+
+      
+
+   
+    <script>
+        var scrollButton = document.getElementById("scroll-button");
+var secondPart = document.getElementById("second-part");
+
+scrollButton.addEventListener("click", function() {
+  secondPart.scrollIntoView({ behavior: "smooth" });
+});
+
+    </script>
+</body>
+</html>
