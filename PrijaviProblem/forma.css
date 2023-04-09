@@ -8,7 +8,7 @@
 * {
   margin: 0;
   padding: 0;
-  color: #151514;
+  color: #1616145b;
   box-sizing: border-box;
 }
 
@@ -31,7 +31,7 @@ textarea {
 }
 
 .form {
-  width: 100%;
+  width: 650px;
   max-width: 820px;
   background-color: #fff;
   border-radius: 10px;
@@ -80,7 +80,8 @@ textarea {
 }
 
 form {
-  padding: 4.1rem 4rem;
+  padding: 4.4rem 4rem;
+  width: 550px;
   z-index: 10;
   overflow: hidden;
   position: relative;
@@ -208,7 +209,7 @@ textarea.input {
 }
 
 .contact-info {
-  padding: 5.3rem 5.3rem;
+  padding: 4.3rem 3.3rem;
   height: 500px;
   position: relative;
 }
