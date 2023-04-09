@@ -5,7 +5,6 @@ const input = document.querySelector(".input")
 const btn = document.querySelector(".btn")
 
 
-
  async function getData (city) {
     const data = await fetch(
         `${BASE_URL}/weather?q=${city}&appid=${API_KEY}&units=metric`
@@ -27,7 +26,7 @@ btn.addEventListener("click", () => {
     let img = document.createElement("img");
     img.src = `https://openweathermap.org/img/w/${res.weather[0].icon}.png`;
     container.appendChild(img)
-    img.style.width = "170px";
+    img.style.width = "140px";
 
 
     let weather = document.createElement("h1");
@@ -58,16 +57,25 @@ btn.addEventListener("click", () => {
     oblaci.innerText = "Oblaci: " + res.clouds.all;
     container.appendChild(oblaci);
 
+    let vetar = document.createElement("p");
+    vetar.innerText = "Vetar: " + res.wind.speed;
+    container.appendChild(vetar);
+
+    let sunr = document.createElement("p");
+    sunr.innerText = "Izlazak sunca: " + new Date(res.sys.sunrise * 1000).toLocaleTimeString();
+    container.appendChild(sunr);
+
+    let suns = document.createElement("p");
+    suns.innerText = "Zalazak sunca: " + new Date(res.sys.sunset * 1000).toLocaleTimeString();
+    container.appendChild(suns);
+
     let crta = document.createElement("p");
     crta.innerText = "______________________________________________" ;
-    crta.style.margin = "40px 0px";
+    crta.style.margin = "20px 0px";
     container.appendChild(crta);
 
-    
-
-});
-
 
 
 });
 
+});

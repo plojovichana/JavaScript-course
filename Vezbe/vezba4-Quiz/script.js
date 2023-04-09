@@ -1,7 +1,7 @@
 const questions = [
     {
       question: "Koji je glavni grad Francuske?",
-      choices: ["Paris", "London", "Berlin", "Madrid"],
+      choices: ["Pariz", "London", "Berlin", "Madrid"],
       correctAnswer: "Paris"
     },
     {
