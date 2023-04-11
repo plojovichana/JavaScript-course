@@ -1,6 +1,8 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -27,14 +29,14 @@ body{
     border: 1px solid rgba(196, 196, 196, 0.377);
     padding: 20px 50px ;
     border-radius: 5px;
-    width: 300px;
+    width: 590px;
 }
 
 .options{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 button{
