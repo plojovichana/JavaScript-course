@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="title"><h1>Text Editor</h1>
+        </div>
+        <div class="options">
+            <button id="boldBtn" onclick="textBold()">Bold</button>
+            <button id="italicBtn"onclick="textItalic()">Italic</button>
+            <button id="normalAlignBtn" onclick="alignleft()"><i class="fa-solid fa-align-left"></i></button>
+            <button id="centarAlignBtn" onclick="aligncenter()"><i class="fa-solid fa-align-center"></i></button>
+            <button id="rightAlignBtn" onclick="aligntright()" ><i class="fa-solid fa-align-right"></i></button>
+            <button id="UperrCaseBtn"  onclick="uppercase()">Upper Case</button>
+            <button id="lowerCaseBtn" onclick="lowercase()">Lower Case</button>
+            <button id="Capitalize"  onclick="capitalize()">Capitalize</button>
+            <button id="clearBtn"  onclick="cleartext()">Clear</button>
+        </div>
+        <div class="text">
+            <textarea id="textarea" name="text" id="text" cols="50" rows="13"></textarea>
+    </div>
+    <button id="preuzmiBtn">preuzmi</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
