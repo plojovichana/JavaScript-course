@@ -51,8 +51,9 @@ button{
 }
 
 button:hover{
-    transition: 0.3s;
-    background-color: rgba(194, 171, 194, 0.364);
+    transition: 0.7s;
+    color: white;
+    background-color: rgba(161, 131, 161, 0.521);
 }
 
 textarea{

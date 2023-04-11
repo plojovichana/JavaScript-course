@@ -35,3 +35,9 @@ function capitalize (){
 function cleartext(){
     text.value = " ";
 }
+
+function preuzmi(){
+    const text1 = document.getElementById("textarea").value;
+    const blob = new Blob([text1], { type: "application/msword" });
+    saveAs(blob, "myDocument.doc");
+}
