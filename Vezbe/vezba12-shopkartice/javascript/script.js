@@ -18,7 +18,7 @@ function createProductCard(product) {
 
 	const productImage = document.createElement('img');
 	productImage.src = product.image;
-	productImage.alt =produst.alt;
+	productImage.alt =product.alt;
 
 	const productTitle = document.createElement('h2');
 	productTitle.textContent = product.title;
