@@ -11,14 +11,14 @@ fetch('https://fakestoreapi.com/products')
 		});
 	});
 
-// Create product card
+	
 function createProductCard(product) {
 	const productCard = document.createElement('div');
 	productCard.classList.add('product-card');
 
 	const productImage = document.createElement('img');
 	productImage.src = product.image;
-	productImage.alt = product.title;
+	productImage.alt =produst.alt;
 
 	const productTitle = document.createElement('h2');
 	productTitle.textContent = product.title;
@@ -39,3 +39,5 @@ function createProductCard(product) {
 
 	return productCard;
 }
+
+
