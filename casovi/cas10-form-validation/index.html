@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" onsubmit="validacija()">
+
+            <div class="">
+                <label for="name">Name</label>
+                <input required minlength="3" maxlength="20" id="name" type="text">
+            </div>
+
+            <div class="">
+                <label for="email">Email</label>
+                <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required id="email" type="text">
+            </div>
+
+            <div class="">
+                <label for="username">Username</label>
+                <input required minlength="3px" maxlength="20px"  id="username" type="text">
+            </div>
+
+            <div class="">
+                <label for="password">Password</label>
+                <input required type="password" name="" id="password">
+            </div>
+
+            <div id="confirmpassword">
+                <label for="confirm password">Confirm password</label>
+                <input required id="cnfpassword" type="password">
+            </div>
+
+            <div>
+                <label for="mobile">Mobile number</label>
+                <input required pattern="[1-9]{3}-[0-9]{3}-[0-9]{3}" type="text">
+            </div>
+
+            <div class="minicontainer">
+
+
+<div class="btns">
+            <button id="sumb">sumbit</button>
+        <button  id="reset">reset</button>
+        </div>
+
+        <div class="loginBtn-div">
+            <h3>Areardy have an assount? </h3><a href="#">Login</a>
+        </div>
+
+            </div>
+        </form>
+         </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
