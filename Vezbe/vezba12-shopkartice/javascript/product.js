@@ -27,7 +27,22 @@ fetch('https://fakestoreapi.com/products/' + id)
 
         const btn = document.createElement("button");
         btn.innerText = "Ukloni"
-        btn.onclick = btnukolni();
         carddiv.appendChild(btn);
     }
 );
+
+
+
+
+const loginBtn = document.querySelector('.login');
+const logoutBtn = document.querySelector('.logout');
+
+let ulogovan = sessionStorage.getItem('user');
+
+if(!ulogovan){
+	loginBtn.style.display = 'block';
+	logoutBtn.style.display = 'none';
+} else {
+	loginBtn.style.display='none';
+	logoutBtn.style.display= 'block'
+}

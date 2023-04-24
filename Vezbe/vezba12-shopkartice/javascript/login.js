@@ -2,15 +2,12 @@ const form = document.getElementById("login-form");
 const btn = document.getElementById("btn")
 
 
-
-
-
 function submitbtn(){
-debugger;
+
+  console.log("nesto");
 const username = document.getElementById("username").value;
 const password = document.getElementById("password").value;
 
-  console.log("nea");
 fetch('https://fakestoreapi.com/auth/login', {
   method: 'POST',
   headers: {
@@ -23,5 +20,23 @@ fetch('https://fakestoreapi.com/auth/login', {
 })
 
 .then(response => response.json())
-.then(json => sassionStorage.setItem("user",json.token), console.log(json));
+.then(json => sessionStorage.setItem("user",json.token))
+.then(res => window.location.href = 'index.html');
+
+}
+
+
+
+
+const loginBtn = document.querySelector('.login');
+const logoutBtn = document.querySelector('.logout');
+
+let ulogovan = sessionStorage.getItem('user');
+
+if(!ulogovan){
+	loginBtn.style.display = 'block';
+	logoutBtn.style.display = 'none';
+} else {
+	loginBtn.style.display='none';
+	logoutBtn.style.display= 'block'
 }

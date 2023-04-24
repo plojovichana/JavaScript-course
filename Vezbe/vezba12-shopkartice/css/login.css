@@ -1,40 +1,61 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0px;
-    padding: 0px;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+font-family: Arial, sans-serif;
+  background-color: #fff;
+  padding: 20px 90px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo {
+  font-size: 60px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  color: #ffcce7;
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
   }
   
-  header {
-	background-color: #333;
-	color: #fff;
-	padding: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
-nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	display: flex;
-}
-
-nav li {
-	margin-right: 20px;
-}
-
-nav a {
-	color: #fff;
-	text-decoration: none;
-}
-
-header h1{
-    font-size: 2em;
-    font-weight: bold;
-    margin: 21.440px 0px;
+  .nav-links {
+    flex-direction: column;
+  }
+  
+  .nav-links li {
+    margin: 10px 0;
+  }
 }
 
 
@@ -75,7 +96,7 @@ header h1{
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #acb6ad;
+    background-color: #eec6e4;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -84,6 +105,28 @@ header h1{
   }
   
   button[type="submit"]:hover {
-    background-color: #acb6ada2;
+    transition: 0.3s;
+    background-color: #db82c8a2;
   }
   
+
+  .divRegister{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  .divRegister a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: #da98c9;
+  }
+
+  .divRegister a:hover{
+    color: #993780;
+    transition: 0.3s;
+  }

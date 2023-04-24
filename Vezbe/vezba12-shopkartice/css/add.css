@@ -4,39 +4,61 @@
     padding: 0px;
     font-family: Arial, sans-serif;
 }
-header {
-background-color: #333;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-color: #fff;
-padding: 20px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px 90px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-nav ul {
-
-margin: 0;
-padding: 0;
-list-style: none;
-display: flex;
-justify-content: space-around;
+.logo {
+  font-size: 60px;
 }
 
-nav li {
-margin-right: 20px;
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-nav a {
-color: #fff;
-text-decoration: none;
+.nav-links li {
+  margin: 0 10px;
 }
 
-header h1{
-font-size: 2em;
-font-weight: bold;
-margin: 21.440px 0px;
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
 }
+
+.nav-links li a:hover {
+  color: #ffcce7;
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+  }
+  
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
+
+
+
 
 form {
   display: flex;
@@ -57,13 +79,19 @@ form label {
 form input, form textarea, form select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #ffcce7a6;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   border-radius: 5px;
   font-size: 16px;
 }
 
+form select {
+  padding: 15px;
+  background-color: #fce0f054;
+}
+
 form textarea:focus{
-   background-color: #cccccc2c;
+   background-color: #f7a2e20a;
 }
 
 form button {
@@ -71,20 +99,20 @@ form button {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #c9c9c9;
+  background-color: #ffcce7;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
 }
 
 form button:hover {
-  background-color: #a19898;
+  background-color: #c2749f;
   transition: 0.3s;
 }
 
 #product-form{
   width: 500px;
- border: 1px solid #dbd8d8;
- box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.3);
+ border: 1px solid #ffe1f1;
+ box-shadow:  0px 0px 10px rgba(235, 178, 202, 0.515);
  padding: 30px 60px;
 }
