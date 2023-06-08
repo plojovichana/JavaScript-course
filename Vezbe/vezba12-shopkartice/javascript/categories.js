@@ -58,15 +58,15 @@ categories.forEach(category => {
 
 
 
-const loginBtn = document.querySelector('.login');
-const logoutBtn = document.querySelector('.logout');
+// const loginBtn = document.querySelector('.login');
+// const logoutBtn = document.querySelector('.logout');
 
-let ulogovan = sessionStorage.getItem('user');
+// let ulogovan = sessionStorage.getItem('user');
 
-if(!ulogovan){
-	loginBtn.style.display = 'block';
-	logoutBtn.style.display = 'none';
-} else {
-	loginBtn.style.display='none';
-	logoutBtn.style.display= 'block'
-}
+// if(!ulogovan){
+// 	loginBtn.style.display = 'block';
+// 	logoutBtn.style.display = 'none';
+// } else {
+// 	loginBtn.style.display='none';
+// 	logoutBtn.style.display= 'block'
+// }

@@ -10,5 +10,7 @@ function validacija(){
        p.innerText = errpass;
         cnfpassworddiv.appendChild(p);
         console.log("a");
+        cnfpassword.value = "";
+        cnfpassword.placeholder = "enter "
     }
 }
